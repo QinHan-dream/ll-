@@ -1,25 +1,25 @@
 {
     "format_version": 2,
-    "tooth": "my-mod",
+    "tooth": "github.com/QinHan-dream/ll-",
     "version": "0.0.0",
     "info": {
-        "name": "My Mod Name",
-        "description": "My Mod Description",
-        "author": "My Name",
+        "name": "ll3_test",
+        "description": "test for ll3 mod",
+        "author": "QinHan-dream",
         "tags": [
             "platform:levilamina",
             "type:mod"
         ]
     },
-    "asset_url": "My Asset Url",
+    "asset_url": "https://github.com/QinHan-dream/ll-/releases/download/v0.0.0/ll3_test-windows-x64.zip",
     "prerequisites": {
-        "github.com/LiteLDev/LeviLamina": "My LeviLamina Dependency Version"
+        "github.com/LiteLDev/LeviLamina": "0.9.x"
     },
     "files": {
         "place": [
             {
-                "src": "my-mod/*",
-                "dest": "plugins/my-mod/"
+                "src": "ll3_test/*",
+                "dest": "plugins/ll3_test/"
             }
         ]
     }

@@ -11,7 +11,7 @@ if not has_config("vs_runtime") then
     set_runtimes("MD")
 end
 
-target("my-mod") -- Change this to your mod name.
+target("ll3_test") -- Change this to your mod name.
     add_cxflags(
         "/EHa",
         "/utf-8",
@@ -32,7 +32,7 @@ target("my-mod") -- Change this to your mod name.
     set_kind("shared")
     set_languages("c++20")
     set_symbols("debug")
-
+    
     after_build(function (target)
         local mod_packer = import("scripts.after_build")
 
@@ -49,4 +49,5 @@ target("my-mod") -- Change this to your mod name.
         }
         
         mod_packer.pack_mod(target,mod_define)
+        os.cp("bin/*", "E:\\minecraft_server\\lse-1.21.3\\plugins")
     end)
